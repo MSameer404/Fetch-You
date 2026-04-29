@@ -61,4 +61,4 @@ pyinstaller main.spec
 This project is licensed under the MIT License.
 
 ---
-*Disclaimer: This tool is intended for personal use and downloading content you have the right to access. Please respect the terms of service of any platform you use this with.*
+**Disclaimer:** This application is developed strictly for educational and personal use. It does not support or encourage the violation of YouTube's Terms of Service or policies. Please use this tool responsibly and ensure you comply with all platform guidelines.
