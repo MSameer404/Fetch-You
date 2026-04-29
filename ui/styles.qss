@@ -1,0 +1,261 @@
+/* ============================================================
+   styles.qss  —  Fetch You Premium Dark Theme
+   ============================================================ */
+
+/* ── Global ── */
+* {
+    font-family: "Segoe UI", "Inter", sans-serif;
+    color: #E8EAF0;
+    outline: none;
+}
+
+QWidget {
+    background-color: #0D0E14;
+}
+
+QWidget#MainWindow {
+    background-color: #0D0E14;
+}
+
+/* ── Scrollbar ── */
+QScrollBar:vertical {
+    background: #16181F;
+    width: 8px;
+    margin: 0;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical {
+    background: #3A3F5C;
+    border-radius: 4px;
+    min-height: 20px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+/* ── Platform Buttons (Main Page) ── */
+QPushButton#btn_youtube {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #FF0000, stop:1 #CC0000);
+    border-radius: 18px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 18px 32px;
+    border: none;
+    color: #ffffff;
+}
+QPushButton#btn_youtube:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #FF3333, stop:1 #FF0000);
+}
+QPushButton#btn_youtube:pressed {
+    background: #990000;
+}
+
+QPushButton#btn_reddit {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #FF4500, stop:1 #D93900);
+    border-radius: 18px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 18px 32px;
+    border: none;
+    color: #ffffff;
+}
+QPushButton#btn_reddit:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #FF6633, stop:1 #FF4500);
+}
+QPushButton#btn_reddit:pressed {
+    background: #B33000;
+}
+
+QPushButton#btn_twitter {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #1DA1F2, stop:1 #0D7DC7);
+    border-radius: 18px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 18px 32px;
+    border: none;
+    color: #ffffff;
+}
+QPushButton#btn_twitter:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #40B3FF, stop:1 #1DA1F2);
+}
+QPushButton#btn_twitter:pressed {
+    background: #0B5E98;
+}
+
+/* ── Generic Accent Button ── */
+QPushButton#btn_fetch {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #7C3AED, stop:1 #4F46E5);
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+    color: #ffffff;
+}
+QPushButton#btn_fetch:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #9D5CF5, stop:1 #6D5AE8);
+}
+QPushButton#btn_fetch:pressed {
+    background: #3730A3;
+}
+QPushButton#btn_fetch:disabled {
+    background: #2D2F3D;
+    color: #555770;
+}
+
+QPushButton#btn_download {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #059669, stop:1 #047857);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 28px;
+    border: none;
+    color: #ffffff;
+}
+QPushButton#btn_download:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #10B981, stop:1 #059669);
+}
+QPushButton#btn_download:pressed {
+    background: #065F46;
+}
+QPushButton#btn_download:disabled {
+    background: #1C2830;
+    color: #3D5248;
+}
+
+/* ── Line Edit ── */
+QLineEdit {
+    background-color: #16181F;
+    border: 1.5px solid #2C2F40;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #CDD5E0;
+    selection-background-color: #4F46E5;
+}
+QLineEdit:focus {
+    border: 1.5px solid #7C3AED;
+    background-color: #1A1C26;
+}
+QLineEdit:hover {
+    border: 1.5px solid #3A3F5C;
+}
+
+/* ── ComboBox ── */
+QComboBox {
+    background-color: #16181F;
+    border: 1.5px solid #2C2F40;
+    border-radius: 10px;
+    padding: 9px 14px;
+    font-size: 13px;
+    color: #CDD5E0;
+}
+QComboBox:hover {
+    border: 1.5px solid #7C3AED;
+}
+QComboBox::drop-down {
+    border: none;
+    width: 28px;
+}
+QComboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #7C3AED;
+    width: 0;
+    height: 0;
+    margin-right: 8px;
+}
+QComboBox QAbstractItemView {
+    background-color: #16181F;
+    border: 1.5px solid #2C2F40;
+    border-radius: 8px;
+    selection-background-color: #2D1F60;
+    color: #CDD5E0;
+    padding: 4px;
+}
+
+/* ── Progress Bar ── */
+QProgressBar {
+    background-color: #16181F;
+    border: none;
+    border-radius: 8px;
+    height: 16px;
+    text-align: center;
+    font-size: 11px;
+    color: #E8EAF0;
+}
+QProgressBar::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #7C3AED, stop:0.5 #4F46E5, stop:1 #06B6D4);
+    border-radius: 8px;
+}
+
+/* ── Labels ── */
+QLabel {
+    background-color: transparent;
+}
+QLabel#lbl_header {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+QLabel#lbl_tagline {
+    font-size: 14px;
+    color: #6B7280;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+}
+QLabel#lbl_section_title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #4F46E5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+QLabel#lbl_video_title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #F3F4F6;
+    background-color: transparent;
+}
+QLabel#lbl_meta {
+    font-size: 16px;
+    font-weight: 600;
+    color: #10B981;
+    background-color: transparent;
+}
+QLabel#lbl_desc {
+    font-size: 12px;
+    color: #9CA3AF;
+    line-height: 1.6;
+    background-color: transparent;
+}
+
+/* ── Card frame ── */
+QFrame#card {
+    background-color: #13151D;
+    border: 1px solid #1E2030;
+    border-radius: 20px;
+}
+
+/* ── Dialog ── */
+QDialog {
+    background-color: #0D0E14;
+}
